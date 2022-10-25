@@ -1,0 +1,73 @@
+package com.yash.collection_assignment;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.List;
+
+
+public class StudentMain7 {
+	
+	static Map<Student7,Integer> smap=new HashMap<>();
+
+	public static void main(String[] args) {
+        List<Student7> sList=new ArrayList<>();
+        Scanner sc=new Scanner(System.in);
+      
+       
+       System.out.println("Enter The Number of Student");
+       
+       
+       int size=sc.nextInt();
+       
+       if(size>=3) {
+       
+       for(int i=0;i<size;i++) {
+    	   
+    	   System.out.println("Enter roll no.");
+           int roll_no=sc.nextInt();
+          
+          System.out.println("Enter Student Name");
+          
+           String sname=sc.next();
+           
+          System.out.println("Enter The className");
+        
+           String classname=sc.next();
+           
+           System.out.println("Enter The Marks");
+
+           double totalmarks=sc.nextDouble();
+    	   sList.add(new Student7(roll_no, sname, classname, totalmarks));
+
+       }
+       }
+       
+       else {
+    	   System.out.println("Please Enter more than 3 Student");
+       }
+       
+       if(size>=3) {
+//       System.out.println(sList);
+       
+       Collections.sort(sList, new MarkCompare7());
+       
+       Collections.reverse(sList);
+       System.out.println("Student who secure First,second and third position");
+//         System.out.println(sList);
+       
+       for(int j=0;j<3;j++) {
+    	   
+       }
+       System.out.println(sList);
+       
+       
+       }
+       
+       
+	}
+
+}
+

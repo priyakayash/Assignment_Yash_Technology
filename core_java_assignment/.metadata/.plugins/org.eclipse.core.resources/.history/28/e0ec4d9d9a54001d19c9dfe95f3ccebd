@@ -1,0 +1,5 @@
+package com.yash.collection_assignment;
+
+public class MarkCompare7 implements Comparator<Student7> {
+
+}

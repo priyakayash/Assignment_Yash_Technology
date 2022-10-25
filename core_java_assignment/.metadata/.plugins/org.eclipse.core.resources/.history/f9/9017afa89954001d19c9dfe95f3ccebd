@@ -1,0 +1,50 @@
+package com.yash.collection_assignment;
+
+import java.util.List;
+import java.util.Set;
+
+public class Program4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		List<String> originalList = new ArrayList<>();
+		
+		// Adding duplicate values
+		originalList.add("priyanka");
+		originalList.add("B1");
+		originalList.add("C");
+		originalList.add("priyanka");
+		originalList.add("B");
+		originalList.add("A");
+
+		// printing the original list
+		System.out.println("Original list values : " + originalList);
+
+		
+		
+	
+		Set<String> linkedSet = new LinkedHashSet<>();
+
+		// adding list values to set
+		linkedSet.addAll(originalList);
+
+		// removing all values from list
+		originalList.clear();
+
+		// add all values from set to list.
+		originalList.addAll(linkedSet);
+
+
+		System.out.println("originalList values ater removing duplicates  : " + originalList);
+
+        Collections.reverse(originalList);
+        
+		System.out.println("originalList values of descending order: " + originalList);
+
+
+
+	}
+
+}

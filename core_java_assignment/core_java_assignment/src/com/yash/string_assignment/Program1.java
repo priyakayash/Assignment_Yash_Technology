@@ -1,0 +1,21 @@
+package com.yash.string_assignment;
+
+import java.util.Scanner;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+    	System.out.println("Enter first String");
+    	String fString  = sc.next();
+    	System.out.println("Enter Second String");
+    	String sString = sc.next();
+    	System.out.println("Enter first String index");
+    	int index = sc.nextInt();
+    	String result = fString.substring(0, index) + sString + fString.substring(index, fString.length());
+    	System.out.println(result);
+
+	}
+
+}

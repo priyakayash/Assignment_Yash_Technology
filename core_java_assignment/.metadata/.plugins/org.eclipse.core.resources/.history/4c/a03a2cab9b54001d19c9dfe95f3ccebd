@@ -1,0 +1,19 @@
+package com.yash.collection_assignment;
+
+import java.util.HashSet;
+
+class Node{
+	int data;
+	Node left, right;
+	public Node(int data) {
+		this.data = data;
+		this.left = null;
+		this.right = null;
+	}
+}
+
+public class Program10 {
+	
+
+
+}
