@@ -1,0 +1,16 @@
+package com.yash.java8_assignment;
+
+
+@FunctionalInterface
+interface EvenInterface{
+    void isEvenInterface(int num1,int num2);
+}
+
+interface OddInterface{
+    void isOddInterface(int num1,int num2);
+}
+
+
+public class Program3 {
+
+}

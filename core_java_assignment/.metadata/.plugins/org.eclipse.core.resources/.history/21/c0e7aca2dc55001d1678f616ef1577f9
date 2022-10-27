@@ -1,0 +1,8 @@
+package com.yash.java8_assignment;
+
+public interface PalindromeInterface {
+	
+	public  abstract boolean isPalindrome(String str);
+	
+
+}
